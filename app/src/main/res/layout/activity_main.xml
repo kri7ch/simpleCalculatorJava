@@ -25,21 +25,21 @@
         android:id="@+id/display_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_above="@id/btn_grid"
         android:layout_alignParentBottom="@id/btn_grid"
         android:layout_marginTop="60dp"
-        android:layout_above="@id/btn_grid"
-        android:gravity="right"
-        android:importantForAutofill="no"
-        android:textColor="@color/white"
-        android:text="@string/zero"
-        android:paddingEnd="10dp"
         android:background="@null"
-        android:textSize="42sp"
-        android:maxLength="30"
-        android:inputType="number"
         android:focusable="false"
         android:focusableInTouchMode="false"
-        tools:ignore="LabelFor,RtlHardcoded,RtlSymmetry" />
+        android:gravity="right"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:maxLength="30"
+        android:paddingEnd="10dp"
+        android:text="@string/zero"
+        android:textColor="@color/white"
+        android:textSize="42sp"
+        tools:ignore="LabelFor,RtlHardcoded,RtlSymmetry,DuplicateSpeakableTextCheck,VisualLintTextFieldSize" />
 
     <GridLayout
         android:id="@+id/btn_grid"
@@ -72,12 +72,13 @@
 
         <Button
             android:id="@+id/btn_shape"
+            style="@style/btn_style_operator"
             android:layout_column="3"
             android:layout_columnSpan="1"
             android:layout_columnWeight="0"
+            android:onClick="clickOperation"
             android:text="@string/shape"
-            style="@style/btn_style_operator"
-            android:onClick="clickOperation"/>
+            tools:ignore="TextContrastCheck" />
 
         <Button
             android:id="@+id/btn_7"
@@ -108,12 +109,13 @@
 
         <Button
             android:id="@+id/btn_multiply"
+            style="@style/btn_style_operator"
             android:layout_column="3"
             android:layout_columnSpan="1"
             android:layout_columnWeight="0"
+            android:onClick="clickOperation"
             android:text="@string/multiply"
-            style="@style/btn_style_operator"
-            android:onClick="clickOperation"/>
+            tools:ignore="TextContrastCheck" />
 
         <Button
             android:id="@+id/btn_4"
@@ -144,12 +146,13 @@
 
         <Button
             android:id="@+id/btn_minus"
+            style="@style/btn_style_operator"
             android:layout_column="3"
             android:layout_columnSpan="1"
             android:layout_columnWeight="0"
+            android:onClick="clickOperation"
             android:text="@string/minus"
-            style="@style/btn_style_operator"
-            android:onClick="clickOperation"/>
+            tools:ignore="TextContrastCheck" />
 
         <Button
             android:id="@+id/btn_1"
@@ -180,12 +183,13 @@
 
         <Button
             android:id="@+id/btn_plus"
+            style="@style/btn_style_operator"
             android:layout_column="3"
             android:layout_columnSpan="1"
             android:layout_columnWeight="0"
+            android:onClick="clickOperation"
             android:text="@string/plus"
-            style="@style/btn_style_operator"
-            android:onClick="clickOperation"/>
+            tools:ignore="TextContrastCheck" />
 
         <Button
             android:id="@+id/btn_0"
@@ -207,12 +211,13 @@
 
         <Button
             android:id="@+id/btn_result"
+            style="@style/btn_style_operator"
             android:layout_column="3"
             android:layout_columnSpan="1"
             android:layout_columnWeight="0"
+            android:onClick="click_result"
             android:text="@string/result"
-            style="@style/btn_style_operator"
-            android:onClick="click_result"/>
+            tools:ignore="TextContrastCheck" />
 
     </GridLayout>
 
