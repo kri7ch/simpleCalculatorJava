@@ -73,9 +73,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void click_Ce(View view) {
-        if (Double.isNaN(operand1)) {
-            return;
-        }
         String currentText = display_input.getText().toString();
         if (!currentText.isEmpty()) {
             display_input.setText(currentText.substring(0, currentText.length() - 1));
